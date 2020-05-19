@@ -33,9 +33,7 @@ class Player:
 
 def send(email, card1, card2):
   me, my_password, msg = "ratinsweet@gmail.com", "pocketaces", MIMEMultipart('alternative')
-  msg['To'] = email 
-  msg['Subject'] = card1[0] + " of " + card1[1] + ", " + card2[0] + " of " + card2[1] 
-  msg['From'] = me
+  msg['To'], msg['Subject'], msg['From'] = email, card1[0] + " of " + card1[1] + ", " + card2[0] + " of " + card2[1], me 
   html = '<html><body><p>Your Hand!!!!!</p></body></html>'
   part2 = MIMEText(html, 'html')
   msg.attach(part2)
