@@ -32,7 +32,7 @@ class Player:
     self.chips -= x
 
 def send(email, card1, card2):
-  me, my_password, msg = "haimingericxu@gmail.com", "nVWRD679!", MIMEMultipart('alternative')
+  me, my_password, msg = "ratinsweet@gmail.com", "pocketaces", MIMEMultipart('alternative')
   msg['To'] = email 
   msg['Subject'] = card1[0] + " of " + card1[1] + ", " + card2[0] + " of " + card2[1] 
   msg['From'] = me
