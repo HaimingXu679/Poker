@@ -272,7 +272,7 @@ def new_hand(p1, p2, p3):
   if input('New hand? ')[0] == 'y':
     new_hand(p1, p2, p3) 
      
-f = open("play.txt", "r")
+f = open("players.txt", "r")
 p1 = Player(f.readline(), f.readline())
 p2 = Player(f.readline(), f.readline())
 p3 = Player(f.readline(), f.readline())
